@@ -25,7 +25,7 @@ Before running the server go to 'src/helpers/Constants.ts':
 - For values go to 'src/components/AppContent.tsx' line 49 and add number of parametars you want passed (optional).
 - Fill in Vivokey client ID and client secret.
 
-- `yarn start` - start the web server that is running on [http://localhost:4200](http://localhost:4200)
+- `npm start` - start the web server that is running on [http://localhost:4200](http://localhost:4200)
 
 - The application is connected to `OpenID Connect Provider` that is running on [https://api.vivokey.com/openid/](https://api.vivokey.com/openid/)
 - This STS has configured a SPA client to run on http://localhost:4200, therefore a sample application will be running on this port `4200`.
