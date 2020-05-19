@@ -19,7 +19,7 @@ const Buttons: React.SFC<IButtonsProps> = props => {
           Get User info
         </button>
         <button className="btn btn-warning btn-getapi" style={{ margin: '10px' }} onClick={props.callApi}>
-          IFTTT
+          Trigger IFTTT
         </button>
         <button className="btn btn-success btn-renewtoken" style={{ margin: '10px' }} onClick={props.renewToken}>
           Renew Token
