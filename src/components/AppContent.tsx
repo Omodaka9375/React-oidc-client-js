@@ -32,21 +32,22 @@ export default class AppContent extends React.Component<any, any> {
     this.authService.login();
   };
 
-  public callApi = () => {
+  public callApi = (iftttEvent: string) => {
+    
     this.apiService
       .callApi()
       .then(data => {
         this.setState({ api: data.data });
         toastr.success('Api return successfully data, check in section - Api response');
-        this.callIFTTT();
+        this.callIFTTT(iftttEvent);
       })
       .catch(error => {
         toastr.error(error);
       });
   };
 
-  private callIFTTT(){
-    iftttwebhooks.sendRequest(Constants.iftttEvent,Constants.iftttSecretKey, {"value1":"prova"}).then(
+  private callIFTTT(iftttEvent: string){
+    iftttwebhooks.sendRequest(iftttEvent,Constants.iftttSecretKey, {"value1":"prova"}).then(
       toastr.success('IFTTT webhook executed')
     )
   };
