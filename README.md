@@ -2,9 +2,9 @@
 
 # React-oidc-client-js
 
-> OpenID Connect (OIDC) client with React and typescript 
+> OpenID Connect (OIDC) client with React and typescript (based on [this](https://github.com/skoruba/react-oidc-client-js) implementation)
 
-- This is sample application that contains [oidc-client-js](https://github.com/IdentityModel/oidc-client-js) and `React` with `Typescript`. It is configured to talk to Vivokey API and IFTTT via Webhooks.
+- This is sample application that contains [oidc-client-js](https://github.com/IdentityModel/oidc-client-js) and `React` with `Typescript`. It is configured to talk to Vivokey API for authentication and validation and IFTTT via Webhooks.
 
 - The application is based on `create-react-app` - [Create React App](https://github.com/facebook/create-react-app)
 
@@ -25,7 +25,7 @@ Before running the server go to 'src/helpers/Constants.ts':
 - For values go to 'src/components/AppContent.tsx' line 49 and add number of parametars you want passed (optional).
 - Fill in Vivokey client ID and client secret.
 
-- `yarn start` - start the web server that is running on [http://localhost:4200](http://localhost:4200)
+- `npm start` - start the web server that is running on [http://localhost:4200](http://localhost:4200)
 
 - The application is connected to `OpenID Connect Provider` that is running on [https://api.vivokey.com/openid/](https://api.vivokey.com/openid/)
 - This STS has configured a SPA client to run on http://localhost:4200, therefore a sample application will be running on this port `4200`.
@@ -33,3 +33,6 @@ Before running the server go to 'src/helpers/Constants.ts':
 ## App preview
 
 ![Logo](public/Images/react-oidc-client-screenshot.png)
+
+## Author
+@branislav.djalic@gmail.com
